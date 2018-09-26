@@ -20,6 +20,9 @@ body {
   .body #thumb {
     font-size: 20px;
     color: green; }
+  .body button {
+    background-color: #EA00FF;
+    color: #15FF00; }
 
 .footer {
   min-height: 50px;
