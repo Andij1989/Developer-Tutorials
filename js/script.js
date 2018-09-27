@@ -161,11 +161,39 @@ function fläche(radius) {
 
 document.getElementById("fläche").innerHTML = "Ein Kreis mit dem Radius von " + radius + "cm" + " hat eine Fläche von ca. " + Math.round(fläche(radius)) + "cm^2.";
 
+var zufall = Math.floor(Math.random() * 100);
 
+document.getElementById("zufall").innerHTML = zufall;
 
+function umrechnen() {
+    var geld, dm;
+    geld = document.getElementById("geld").value;
+    dm = geld * 1.95583;
+    document.getElementById("eudm").innerHTML = geld + "€ sind " + dm +"DM.";
+}
 
+function altersprobe() {
+    var alter, erlaubt;
+    alter = document.getElementById("alter").value;
+    erlaubt = (alter >= 18) ? "Du darfst Alcohol kaufen!":"Du darfst kein Alcohol kaufen!";
+    document.getElementById("alterp").innerHTML = erlaubt;
+}
 
-
-
-
+var foobar = "";
+var i;
+for (i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        foobar += i + " foo bar" + "<br>";
+    }
+    else if (i % 3 == 0) {
+        foobar += i + " foo" + "<br>";
+    }
+    else if (i % 5 == 0) {
+        foobar += i + " bar" + "<br>";
+    }
+    else {
+        foobar += i + "<br>";
+    }
+}
+document.getElementById("foobar").innerHTML = foobar;
 

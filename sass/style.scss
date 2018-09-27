@@ -3,12 +3,12 @@ body {
 }
 .header {
   min-height: 50px;
-  background-color: #15FF00;
+  background-color: #EA00FF;
   opacity: 0.8;
-  border: 1px solid #EA00FF;
+  border: 1px solid #15FF00;
   border-radius: 5px 5px 0px 0px;
   text-align: center;
-  color: #EA00FF;
+  color: #15FF00;
 }
 .body {
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #15FF00), color-stop(1, #EA00FF));
@@ -28,10 +28,10 @@ body {
 }
 .footer {
   min-height: 50px;
-  background-color: #EA00FF;
+  background-color: #15FF00;
   opacity: 0.9;
-  border: 1px solid #15FF00;
+  border: 1px solid #EA00FF;
   border-radius: 0px 0px 5px 5px;
   text-align: center;
-  color: #15FF00;
+  color: #EA00FF;
 }
