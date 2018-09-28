@@ -12,7 +12,7 @@
     <title>JavaScript</title>
 </head>
 <body>
-
+<style id="style-change"></style>
 
 
 <div class="container">
@@ -26,7 +26,11 @@
 
         <div class="row">
             <div class="col-sm-12">
-
+                <input type="text" id="color2" value="Farbe 1">
+                <input type="text" id="color1" value="Farbe 2">
+                <button type="button" onclick="changeStyle()">Stylee</button>
+                <br>
+                <br>
                 <button type="button" onclick="buttonAction()">
                     Bitte Klicken
                 </button>
@@ -90,6 +94,18 @@
                 <br>
                 <br>
                 <p id="foobar"></p>
+                <br>
+                <br>
+                <p>Bitte geben Sie eine Zahl zwischen 10 und 100 ein und bestätigen Sie!</p>
+                <input id="testInput" type="text">
+                <button type="button" onclick="testContent()">Bitte Klicken</button>
+                <p id="testText"></p>
+                <br>
+                <br>
+                <p>Bitte geben Sie eine Farbe(Englisch) ein oder einen Farbcode!</p>
+                <input id="colorInput" type="text">
+                <button type="button" onclick="colorContent()">Bitte Klicken</button>
+                <div id="colorText"><p>Farbe</p></div>
 
             </div>
         </div>

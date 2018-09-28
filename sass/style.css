@@ -15,14 +15,14 @@ body {
   min-height: 800px;
   border-left: 1px solid #EA00FF;
   border-right: 1px solid #15FF00;
-  background-color: lavender;
   padding: 40px; }
   .body #thumb {
     font-size: 20px;
     color: green; }
-  .body button {
-    background-color: #EA00FF;
-    color: #15FF00; }
+
+button {
+  background-color: #EA00FF;
+  color: #15FF00; }
 
 .footer {
   min-height: 50px;

@@ -197,3 +197,49 @@ for (i = 1; i <= 100; i++) {
 }
 document.getElementById("foobar").innerHTML = foobar;
 
+function testContent() {
+    var message, x;
+    message = document.getElementById("testText");
+    message.innerHTML = "";
+    x = document.getElementById("testInput").value;
+    try {
+        if(x == "") throw "Sie haben nichts Eingegeben!";
+        if(isNaN(x)) throw "Das ist keine Nummer!";
+        x = Number(x);
+        if(x < 10) throw "Die Zahl ist zu klein!";
+        if(x > 100) throw "Die Zahl ist zu groß!";
+    }
+    catch(err) {
+        message.innerHTML = err;
+    }
+}
+
+function colorContent() {
+    var color = document.getElementById("colorInput").value;
+    document.getElementById("colorText").innerHTML = '<p style="color:' + color + '">Farbe</p>'
+}
+
+function changeStyle() {
+    var c1 = document.getElementById("color1").value;
+    var c2 = document.getElementById("color2").value;
+    document.getElementById("style-change").innerHTML =
+        ".header {\n" +
+        "  background-color: " + c1 + ";\n" +
+        "  border: 1px solid " + c2 + ";\n" +
+        "  color: " + c2 + ";\n" +
+        "}\n" +
+        ".body {\n" +
+        "background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, " + c2 + "), color-stop(1, " + c1 + "));\n" +
+        "border-left: 1px solid " + c1 + ";\n" +
+        "border-right: 1px solid " + c2 + ";\n" +
+        "}\n" +
+        "button {\n" +
+        "background-color: " + c1 + ";\n" +
+        "color: " + c2 + ";\n" +
+        "}\n" +
+        ".footer {" +
+        "background-color: " + c2 + ";\n" +
+        "border: 1px solid " + c1 + ";\n" +
+        "color: " + c1 + ";\n" +
+        "}\n";
+}
