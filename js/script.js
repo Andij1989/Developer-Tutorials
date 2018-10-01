@@ -243,53 +243,54 @@ function changeStyle() {
         "color: " + c1 + ";\n" +
         "}\n";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function changeWidth1() {
-    document.getElementById("col-1").className = "col-sm-8 col-big";
-    document.getElementById("col-2").className = "col-sm-2 col-small";
-    document.getElementById("col-3").className = "col-sm-2 col-small";
+    document.getElementById("col-1").className = "col-sm-8 col-big animation-out";
+    document.getElementById("col-2").className = "col-sm-2 col-small animation-out";
+    document.getElementById("col-3").className = "col-sm-2 col-small animation-out";
 }
 function changeWidth2() {
-    document.getElementById("col-1").className = "col-sm-2 col-small";
-    document.getElementById("col-2").className = "col-sm-8 col-big";
-    document.getElementById("col-3").className = "col-sm-2 col-small";
+    document.getElementById("col-1").className = "col-sm-2 col-small animation-out";
+    document.getElementById("col-2").className = "col-sm-8 col-big animation-out";
+    document.getElementById("col-3").className = "col-sm-2 col-small animation-out";
 }
 function changeWidth3() {
-    document.getElementById("col-1").className = "col-sm-2 col-small";
-    document.getElementById("col-2").className = "col-sm-2 col-small";
-    document.getElementById("col-3").className = "col-sm-8 col-big";
+    document.getElementById("col-1").className = "col-sm-2 col-small animation-out";
+    document.getElementById("col-2").className = "col-sm-2 col-small animation-out";
+    document.getElementById("col-3").className = "col-sm-8 col-big animation-out";
 }
 function changeBack() {
-    document.getElementById("col-1").className = "col-sm-4";
-    document.getElementById("col-2").className = "col-sm-4";
-    document.getElementById("col-3").className = "col-sm-4";
+    document.getElementById("col-1").className = "col-sm-4 animation-in";
+    document.getElementById("col-2").className = "col-sm-4 animation-in";
+    document.getElementById("col-3").className = "col-sm-4 animation-in";
+}
+function changeColor() {
+    document.getElementById("mouseEffect-1").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-2").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-3").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-4").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-5").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-6").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-7").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-8").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+    document.getElementById("mouseEffect-9").style.backgroundImage = "linear-gradient(180deg,red,yellow)";
+}
+function changeColorBack() {
+    document.getElementById("mouseEffect-1").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-2").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-3").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-4").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-5").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-6").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-7").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-8").style.backgroundImage = "linear-gradient(180deg,purple,red)";
+    document.getElementById("mouseEffect-9").style.backgroundImage = "linear-gradient(180deg,purple,red)";
 }
 
-
-
-
-
-
-
-
-
+$(function(){
+    $("").mouseenter(function(){
+        $("").css("display", "none")
+    })
+})
 
 
 

@@ -2,9 +2,11 @@
   background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
   text-align: center;
-  min-height: 300px;
+  min-height: 350px;
   border-radius: 3px;
   color: white; }
+  .grid .icon-center {
+    margin-top: 25%; }
   .grid .onlyBig {
     display: none; }
   .grid i {
@@ -15,18 +17,11 @@
     -webkit-text-fill-color: transparent; }
   .grid p {
     font-weight: bold; }
-
-#col-1 {
-  padding-right: 5px;
-  padding-left: 5px; }
-
-#col-2 {
-  padding-right: 5px;
-  padding-left: 5px; }
-
-#col-3 {
-  padding-right: 5px;
-  padding-left: 5px; }
+  .grid .headline {
+    font-size: 28px; }
+  .grid .small-p-only {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5); }
 
 .col-big .grid {
   background-color: rgba(255, 255, 255, 0.15); }
@@ -39,6 +34,8 @@
     background-image: linear-gradient(180deg, yellow, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .col-big .grid .small-p-only {
+    display: none; }
   .col-big .grid .onlyBig {
     display: block; }
     .col-big .grid .onlyBig p {
@@ -50,6 +47,21 @@
       background-image: linear-gradient(180deg, purple, red);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+    .col-big .grid .onlyBig .small-p {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5); }
+    .col-big .grid .onlyBig .start-btn {
+      padding: 10px;
+      margin: 20px;
+      background-image: linear-gradient(180deg, purple, red);
+      border-radius: 3px;
+      color: rgba(255, 255, 255, 0.8);
+      width: 30%;
+      display: inline-block; }
+    .col-big .grid .onlyBig .start-btn:hover {
+      background-image: linear-gradient(180deg, red, yellow);
+      color: white;
+      text-decoration: none; }
 
 .col-small .grid {
   background-color: rgba(255, 255, 255, 0.05); }
@@ -59,6 +71,21 @@
     background-image: linear-gradient(180deg, grey, grey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .col-small .grid .small-p-only {
+    display: none; }
+  .col-small .grid .headline {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5); }
+
+.animation-in {
+  padding-right: 5px;
+  padding-left: 5px;
+  transition: all 1.25s; }
+
+.animation-out {
+  padding-right: 5px;
+  padding-left: 5px;
+  transition: all 1.25s; }
 
 body {
   background-color: white;

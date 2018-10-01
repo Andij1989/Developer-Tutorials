@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="sass/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>JavaScript</title>
 </head>
 <body>
@@ -27,96 +28,100 @@
     <div class="body">
         <div class="grid-row">
             <div class="row">
-                <div id="col-1" class="col-sm-4" onmouseover="changeWidth1()" onmouseout="changeBack()">
+                <div id="col-1" class="col-sm-4 animation-in" onmouseover="changeWidth1()" onmouseout="changeBack()">
                     <div class="grid grid-1">
                         <div class="content">
-                            <i class="fas fa-jedi"></i>
-                            <p>Jedi</p>
+                            <i class="fas fa-jedi icon-center"></i>
+                            <p class="headline">Jedi</p>
+                            <p class="small-p-only">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                             <div class="onlyBig">
                                 <div class="row">
-                                    <div class="col-sm-4">
-                                        <i class="fas fa-yin-yang"></i>
+                                    <div class="col-sm-4 animation-in">
+                                        <i class="fas fa-yin-yang" id="mouseEffect-1"></i>
                                         <p>Lorem Ipsum</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <i class="fas fa-atom"></i>
+                                        <i class="fas fa-atom" id="mouseEffect-2"></i>
                                         <p>Lorem Ipsum</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <i class="fas fa-vihara"></i>
+                                        <i class="fas fa-vihara" id="mouseEffect-3"></i>
                                         <p>Lorem Ipsum</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                 </div>
+                                <a href="#" class="start-btn" onmouseover="changeColor()" onmouseout="changeColorBack()">Start</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="col-2" class="col-sm-4" onmouseover="changeWidth2()" onmouseout="changeBack()">
+                <div id="col-2" class="col-sm-4 animation-in" onmouseover="changeWidth2()" onmouseout="changeBack()">
                     <div class="grid grid-2">
                         <div class="content">
-                            <i class="fas fa-gopuram"></i>
-                            <p>Tempel</p>
+                            <i class="fas fa-gopuram icon-center"></i>
+                            <p class="headline">Tempel</p>
+                            <p class="small-p-only">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                             <div class="onlyBig">
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <i class="fas fa-dove"></i>
+                                        <i class="fas fa-dove" id="mouseEffect-4"></i>
                                         <p>Lorem Ipsum</p>
-                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <i class="fas fa-hamsa"></i>
+                                        <i class="fas fa-hamsa" id="mouseEffect-5"></i>
                                         <p>Lorem Ipsum</p>
-                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <i class="fas fa-peace"></i>
+                                        <i class="fas fa-peace" id="mouseEffect-6"></i>
                                         <p>Lorem Ipsum</p>
-                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                 </div>
+                                <a href="#" class="start-btn" onmouseover="changeColor()" onmouseout="changeColorBack()">Start</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="col-3" class="col-sm-4" onmouseover="changeWidth3()" onmouseout="changeBack()">
+                <div id="col-3" class="col-sm-4 animation-in" onmouseover="changeWidth3()" onmouseout="changeBack()">
                     <div class="grid grid-3">
                         <div class="content">
-                            <i class="fas fa-pastafarianism"></i>
-                            <p>Monster</p>
+                            <i class="fas fa-pastafarianism icon-center"></i>
+                            <p class="headline">Monster</p>
+                            <p class="small-p-only">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                             <div class="onlyBig">
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <i class="fas fa-vihara"></i>
+                                        <i class="fas fa-vihara" id="mouseEffect-7"></i>
                                         <p>Lorem Ipsum</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <i class="fas fa-khanda"></i>
+                                        <i class="fas fa-khanda" id="mouseEffect-8"></i>
                                         <p>Lorem Ipsum</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <i class="fas fa-torii-gate"></i>
+                                        <i class="fas fa-torii-gate" id="mouseEffect-9"></i>
                                         <p>Lorem Ipsum</p>
+                                        <p class="small-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                     </div>
                                 </div>
+                                <a href="#" class="start-btn" onmouseover="changeColor()" onmouseout="changeColorBack()">Start</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
         <br>
         <br>
+        <br>
+        <br>
+        <button type="button" class="delete-p">Text Löschen</button>
         <br>
         <br>
         <div class="row">
@@ -221,7 +226,7 @@
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script language="javascript" type="text/javascript" src="js/script.js"></script>
 <script language="javascript" type="text/javascript" src="js/script-min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
