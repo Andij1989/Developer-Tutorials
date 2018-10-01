@@ -1,5 +1,68 @@
+.grid {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  text-align: center;
+  min-height: 300px;
+  border-radius: 3px;
+  color: white; }
+  .grid .onlyBig {
+    display: none; }
+  .grid i {
+    font-size: 40px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .grid p {
+    font-weight: bold; }
+
+#col-1 {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+#col-2 {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+#col-3 {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+.col-big .grid {
+  background-color: rgba(255, 255, 255, 0.15); }
+  .col-big .grid p {
+    font-size: 30px; }
+  .col-big .grid i {
+    display: none;
+    font-size: 60px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .col-big .grid .onlyBig {
+    display: block; }
+    .col-big .grid .onlyBig p {
+      font-size: 20px; }
+    .col-big .grid .onlyBig i {
+      display: block;
+      font-size: 40px;
+      padding: 20px;
+      background-image: linear-gradient(180deg, purple, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+.col-small .grid {
+  background-color: rgba(255, 255, 255, 0.05); }
+  .col-small .grid i {
+    font-size: 30px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, grey, grey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
 body {
-  background-color: black; }
+  background-color: white;
+  font-family: 'Montserrat', sans-serif; }
 
 .header {
   min-height: 50px;

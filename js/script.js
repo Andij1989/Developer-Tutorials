@@ -243,3 +243,56 @@ function changeStyle() {
         "color: " + c1 + ";\n" +
         "}\n";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function changeWidth1() {
+    document.getElementById("col-1").className = "col-sm-8 col-big";
+    document.getElementById("col-2").className = "col-sm-2 col-small";
+    document.getElementById("col-3").className = "col-sm-2 col-small";
+}
+function changeWidth2() {
+    document.getElementById("col-1").className = "col-sm-2 col-small";
+    document.getElementById("col-2").className = "col-sm-8 col-big";
+    document.getElementById("col-3").className = "col-sm-2 col-small";
+}
+function changeWidth3() {
+    document.getElementById("col-1").className = "col-sm-2 col-small";
+    document.getElementById("col-2").className = "col-sm-2 col-small";
+    document.getElementById("col-3").className = "col-sm-8 col-big";
+}
+function changeBack() {
+    document.getElementById("col-1").className = "col-sm-4";
+    document.getElementById("col-2").className = "col-sm-4";
+    document.getElementById("col-3").className = "col-sm-4";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
